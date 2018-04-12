@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bandal Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Gamja+Flower|Nanum+Brush+Script" rel="stylesheet">
+</head>
+<body>
+    <div class="page-header">
+    <h1><a href="/"> Bandal Blog</a></h1>
+</div>
+
+    <div class="page-bar">
+
+    </div>
+{% block content %}
+{% endblock %}
+</body>
+</html>
