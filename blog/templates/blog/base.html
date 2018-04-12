@@ -14,7 +14,9 @@
 </div>
 
     <div class="page-bar">
-
+        {% if user.is_authenticated %}
+        <a href="{% url 'post_new' %}">글 작성하기</a>
+        {% endif %}
     </div>
 {% block content %}
 {% endblock %}
