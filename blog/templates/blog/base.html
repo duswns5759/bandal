@@ -6,7 +6,7 @@
      <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}?v=1">
     <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Gamja+Flower|Nanum+Brush+Script" rel="stylesheet">
 </head>
 <body>
@@ -21,8 +21,8 @@
                      <div class="navbar-header">
                      </div>
                      <ul class="nav navbar-nav">
-                       <li class="active"><a href="#">Home</a></li>
-                       <li><a href="#">C 언어</a></li>
+                       <li class="active"><a a href="/">Home</a></li>
+                       <li><a href="{% url 'C_lang' %}">C 언어</a></li>
                        <li><a href="#">HTML</a></li>
                          <li><a href="#">Python</a><li>
                      </ul>
@@ -30,7 +30,7 @@
                          {% if user.is_authenticated %}
                        <li><a href="{% url 'post_new' %}"><span class="glyphicon glyphicon-user"></span> 글 작성하기</a></li>
                          {% endif %}
-                       <li><a href="http://duswns5759.pythonanywhere.com/admin/"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                       <li><a href="/admin/"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                      </ul>
                   </div>
                 </nav>

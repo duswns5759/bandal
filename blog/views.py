@@ -11,6 +11,10 @@ def post_list(request):
     posts = Post.objects.all()
     return render(request, 'blog/post_list.html', {'posts': posts})
 
+def C_lang(request):
+    C_post = Post.objects.filter(title__contains='title')
+    return render(request, 'blog/C_lang.html', {'C_post': C_post})
+
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
