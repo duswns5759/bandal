@@ -1,13 +1,7 @@
 .page-header {
-    margin-top: 0;
+    margin-top: 20px;
     padding: 20px 20px 20px 40px;
     background-color : #D3D3D3
-}
-
-.page-bar {
-    margin-top: 0;
-    padding: 10px 10px 20px 40px;
-    background-color : #C0C0C0
 }
 
 .post{
@@ -31,3 +25,20 @@ div p {
     font-size: 40px;
 }
 
+.comment {
+    margin: 20px 0px 20px 20px;
+}
+
+.comment_mar{
+    margin-left: 50px;
+}
+
+.relative{
+    position: absolute;
+}
+
+.nav_position{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
